@@ -1,6 +1,8 @@
 body {
+  display: flex;
   padding: 0;
   text-align: center;
+  justify-content: center;
 }
 
 .game-intro {
@@ -35,4 +37,36 @@ body button {
 #game-board {
     float: left;
     padding: 20px 0px;
+}
+
+#loseScreen {
+  position: absolute;
+  left: calc(50% - 350px);
+  top: calc(50% - 350px);
+  margin: 0 auto;
+  background-image: url(../images/gameover.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 700px;
+  display: none;
+}
+
+#loseScreen button {
+  position: relative;
+  background-color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  top: 65%;
+  left: calc(50% - 350px);
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+#loseScreen h2 {
+  position: relative;
+  top: 70%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: black;
 }
